@@ -23,7 +23,7 @@ header{
   width: 100%;
   height: 15%;
   box-sizing: border-box;
-  background-image: url(C:/Users/Moh%20Most/Downloads/sandbox/a/images/navbars.png);
+  background-color: white;
 }
 .navbar a {
    color: black;
