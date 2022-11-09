@@ -83,6 +83,7 @@ a:hover {
 }
 .touche {
   font-family: "Raleway", sans-serif;
+  color: #d86eff;
 }
 .touche2 {
   font-family: "Raleway", sans-serif;
@@ -98,11 +99,20 @@ a:hover {
   transform: translateX(-50%) translateY(-150%);
 }
 .newlogoc {
-  position: fixed;
   display: block;
   align-items: center;
   position: absolute;
-  top: 50%;
+  top: 30.4%;
   left: 50%;
-  transform: translateX(-50%) translateY(-133%);
+  transform: translate(-50%, -50%);
+  animation: myfirst 1.5s infinite linear;
+  animation-duration: 10s;
+}
+@keyframes myfirst{
+  0%{
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100%{
+    transform: translate(-50%, -50%) rotate(360deg);
+  } 
 }
