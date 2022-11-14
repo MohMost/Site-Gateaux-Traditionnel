@@ -102,17 +102,48 @@ a:hover {
   display: block;
   align-items: center;
   position: absolute;
-  top: 30.4%;
+  top: 30.04%;
   left: 50%;
   transform: translate(-50%, -50%);
   animation: myfirst 1.5s infinite linear;
   animation-duration: 10s;
 }
-@keyframes myfirst{
-  0%{
+
+@keyframes myfirst {
+  0% {
     transform: translate(-50%, -50%) rotate(0deg);
   }
-  100%{
+  100% {
     transform: translate(-50%, -50%) rotate(360deg);
-  } 
+  }
 }
+@media screen and (max-width: 1322px) {
+  .title {
+    font-size: 4em;
+  }
+  .greeting {
+    font-size: 3em;
+  }
+}
+@media screen and (max-width: 887px) {
+  .title {
+    font-size: 3em;
+  }
+  .greeting {
+    font-size: 2em;
+  }
+  div img{
+    width: 20%;  
+    height: auto;
+  }
+  
+}
+@media screen and (max-width: 669px) {
+  .title {
+    font-size: 2.3em;
+  }
+  .greeting {
+    font-size: 1.5em;
+  }
+}
+
