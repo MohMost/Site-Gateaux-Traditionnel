@@ -16,17 +16,17 @@
       <a href="index.html" class="logo"><span class="touche2">Touche</span> <span class="fem2">Féminine</span></a>
       <div class="nav-links">
        <ul>
-         <li><a class="left" href="index.html">Accueil</a></li>
-         <li><a href="#">À propos de nous</a></li>
-         <li><a href="#">Nos produits</a></li>
-         <li><a href="#">Contacts</a></li>
+         <li><a class="nav-text" href="index.html">Accueil</a></li>
+         <li><a class="nav-text" href="#">À propos de nous</a></li>
+         <li><a class="nav-text" href="#">Nos produits</a></li>
+         <li><a class="nav-text" href="#">Contacts</a></li>
          <li><a class="right" href="#"><img src="images/search.png"></a></li>
        </ul>
       </div>   
-
+      <img src="images/menu.png" alt="menu" class="menu">
     </nav> 
        
-  <header>
+  <header class=".rass">
     <div class="globalicon">
     <img class="newlogo" src="images/green.png" alt="">
     <img class="newlogoc" src="images/circle2.png" alt="">
@@ -38,4 +38,12 @@
       <h1 class="ps">Best Seller</h1>
   </div>
 </body>
+<script>
+  const menuHamburger = document.querySelector(".menu")
+  const navLinks = document.querySelector(".nav-links")
+
+  menuHamburger.addEventListener('click',()=>{
+  navLinks.classList.toggle('mobile-menu')
+  })
+</script>
 </html>

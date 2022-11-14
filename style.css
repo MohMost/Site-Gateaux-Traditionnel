@@ -35,6 +35,8 @@ a:hover {
 .navbar .logo {
   font-size: 1.7em;
   font-weight: bold;
+  margin-top: -20px;
+  margin-bottom: 0%;
 }
 .navbar .nav-links ul {
   display: flex;
@@ -92,21 +94,29 @@ a:hover {
   color: #b2e04a;
 }
 .newlogo {
+  display: block;
   align-items: center;
   position: absolute;
-  top: 50%;
+  top: 28.04%;
   left: 50%;
-  transform: translateX(-50%) translateY(-150%);
+  transform: translateX(-50%) translateY(-50%);
 }
 .newlogoc {
   display: block;
   align-items: center;
   position: absolute;
-  top: 30.04%;
+  top: 28.5%;
   left: 50%;
   transform: translate(-50%, -50%);
   animation: myfirst 1.5s infinite linear;
   animation-duration: 10s;
+}
+nav .menu {
+  display: none;
+  position: absolute;
+  width: 35px;
+  top: 40px;
+  right: 30px;
 }
 
 @keyframes myfirst {
@@ -125,6 +135,14 @@ a:hover {
     font-size: 3em;
   }
 }
+@media screen and (max-width: 920px) {
+  a {
+    font-size: 0.9rem;
+  }
+  .navbar .nav-links ul li {
+    margin: 0 7px;
+  }
+}
 @media screen and (max-width: 887px) {
   .title {
     font-size: 3em;
@@ -132,11 +150,59 @@ a:hover {
   .greeting {
     font-size: 2em;
   }
-  div img{
-    width: 20%;  
+  div .newlogo {
+    width: 25%;
     height: auto;
   }
-  
+  div .newlogoc {
+    width: 27%;
+    height: auto;
+  }
+}
+@media screen and (max-width: 740px) {
+  .title {
+    top: 43%;
+  }
+  .greeting {
+    top: 43%;
+  }
+}
+@media screen and (max-width: 722px) {
+  nav .menu {
+    display: block;
+  }
+  .nav-links {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: #3b4b1567;
+    backdrop-filter: blur(7px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    margin: -100%;
+  }
+  .nav-links.mobile-menu {
+    margin: 0;
+  }
+  .nav-links ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar .nav-links ul li {
+    margin: 25px 0;
+  }
+
+  .navbar .nav-links ul li .nav-text {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  .nav-links ul .right {
+    display: none;
+  }
 }
 @media screen and (max-width: 669px) {
   .title {
@@ -146,4 +212,3 @@ a:hover {
     font-size: 1.5em;
   }
 }
-
