@@ -8,6 +8,26 @@
 body {
   font-family: "Poppins";
 }
+.map{
+  position: relative;
+  min-width: 70%;
+  right: 0;
+  left: 30%;
+}
+.contact{
+  position: absolute;
+  display: inline;
+  background-color: #151a08;
+  color: white;
+  width: 30%;
+  height: 450px;
+  padding: 10px 10px;
+}
+footer form .form-title{
+  text-align: center;
+  left: 50%;
+  
+}
 header {
   min-height: 100vh;
   background: rgba(0, 0, 0, 0.7)
@@ -114,9 +134,41 @@ a:hover {
 nav .menu {
   display: none;
   position: absolute;
+  z-index: 1;
   width: 35px;
   top: 40px;
   right: 30px;
+}
+section .face{
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  right: 50%;
+  width: 30px;
+}
+section .insta{
+  position: absolute;
+  top: 80%;
+  left: 25%;
+  width: 30px;
+}
+section .link{
+  position: absolute;
+  top: 80%;
+  right: 25%;
+  width: 30px;
+}
+  
+.content1{
+  background-color: #140917;
+}
+.content1 .ps{
+color: #b2e04a;
+font-size: 20px;
+}
+section a img:hover{
+  transform: scale(1.5);
+  animation-delay: 2s;
 }
 
 @keyframes myfirst {
@@ -135,6 +187,11 @@ nav .menu {
     font-size: 3em;
   }
 }
+@media screen and (min-width: 1030px) {
+  section a img{
+    width: 2rem;
+  }
+}
 @media screen and (max-width: 920px) {
   a {
     font-size: 0.9rem;
@@ -143,7 +200,7 @@ nav .menu {
     margin: 0 7px;
   }
 }
-@media screen and (max-width: 887px) {
+@media screen and (max-width: 889px) {
   .title {
     font-size: 3em;
   }
@@ -167,16 +224,19 @@ nav .menu {
     top: 43%;
   }
 }
-@media screen and (max-width: 722px) {
+@media screen and (max-width: 729px) {
   nav .menu {
     display: block;
   }
   .nav-links {
     position: absolute;
+    z-index: 1;
     width: 100%;
     height: 100vh;
-    background-color: #3b4b1567;
-    backdrop-filter: blur(7px);
+    background:rgba(0, 0, 0, 0.9)
+    url(images/blurpic.jpg);
+    background-size: cover;
+  background-blend-mode: darken;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -203,6 +263,12 @@ nav .menu {
   .nav-links ul .right {
     display: none;
   }
+  .title {
+    top: 41%;
+  }
+  .greeting {
+    top: 41%;
+  }
 }
 @media screen and (max-width: 669px) {
   .title {
@@ -210,5 +276,27 @@ nav .menu {
   }
   .greeting {
     font-size: 1.5em;
+  }
+}
+@media screen and (max-width: 518px) {
+  .title {
+    font-size: 1.9em;
+  }
+  .greeting {
+    font-size: 1.1em;
+  }
+}
+@media screen and (max-width: 453px){
+  .title {
+    font-size: 1.5em;
+  }
+  .greeting {
+    font-size: 0.9em;
+  }
+}
+@media screen and (max-width: 342px){
+  .title {
+    font-size: 1.3em;
+    top: 39%;
   }
 }
